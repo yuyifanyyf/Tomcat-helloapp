@@ -27,6 +27,24 @@
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>Font</servlet-name>
+		<servlet-class>mypack.FontServlet</servlet-class>
+		<init-param>
+			<param-name>color</param-name>
+			<param-value>blue</param-value>
+		</init-param>
+		<init-param>
+			<param-name>size</param-name>
+			<param-value>15</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Font</servlet-name>
+		<url-pattern>/font</url-pattern>
+	</servlet-mapping>
+	
+	
 	<welcome-file-list>
 		<welcome-file>login.htm </welcome-file>
 	</welcome-file-list>
