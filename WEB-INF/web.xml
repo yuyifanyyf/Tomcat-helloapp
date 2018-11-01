@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <web-app>
+	<context-param>
+		<param-name>emailOfwebmaster</param-name>
+		<param-value>yuyifan@bupt.edu.cn</param-value>
+	</context-param>
+	
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>mypack.DispatcherServlet</servlet-class>
@@ -25,6 +30,15 @@
 	<servlet-mapping>
 		<servlet-name>hello</servlet-name>
 		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>contextTest</servlet-name>
+		<servlet-class>mypack.ContextTesterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contextTest</servlet-name>
+		<url-pattern>/contextTest</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
