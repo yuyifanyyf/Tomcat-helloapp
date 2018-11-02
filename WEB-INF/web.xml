@@ -6,6 +6,25 @@
 	</context-param>
 	
 	<servlet>
+		<servlet-name>lifeInit</servlet-name>
+		<servlet-class>mypack.LifeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lifeInit</servlet-name>
+		<url-pattern>/lifeInit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>life</servlet-name>
+		<servlet-class>mypack.LifeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>life</servlet-name>
+		<url-pattern>/life</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>mypack.DispatcherServlet</servlet-class>
 	</servlet>
