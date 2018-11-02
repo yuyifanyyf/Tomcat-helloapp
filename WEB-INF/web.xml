@@ -88,6 +88,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>download</servlet-name>
+		<servlet-class>mypack.DownloadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>Font</servlet-name>
 		<servlet-class>mypack.FontServlet</servlet-class>
 		<init-param>
