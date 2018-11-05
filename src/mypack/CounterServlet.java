@@ -25,7 +25,8 @@ public class CounterServlet extends HttpServlet{
 		PrintWriter out = response.getWriter();
 		out.println("<html><head><title>CounterServlet</title></head>");
 		out.println("<body>");
-		out.println("<h1>欢迎光临。您是第" + counter.getCount() + "位访问者。</h1>");
+		String imageLink = "<img src='image?count=" + counter.getCount() + "'/>";
+		out.println("欢迎光临。您是第" + imageLink + "位访问者。");
 		out.println("</body></html>");
 		counter.add(1);
 		out.close();
