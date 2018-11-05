@@ -70,6 +70,23 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>upload</servlet-name>
+		<servlet-class>mypack.UploadServlet</servlet-class>
+		<init-param>
+			<param-name>filePath</param-name>
+			<param-value>store</param-value>
+		</init-param>
+		<init-param>
+			<param-name>tempFilePath</param-name>
+			<param-value>temp</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>hello</servlet-name>
 		<servlet-class>mypack.HelloServlet</servlet-class>
 	</servlet>
