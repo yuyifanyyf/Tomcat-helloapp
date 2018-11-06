@@ -150,6 +150,24 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>main</servlet-name>
+		<servlet-class>mypack.MainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>main</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>greet</servlet-name>
+		<servlet-class>mypack.GreetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>greet</servlet-name>
+		<url-pattern>/greet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>contextTest</servlet-name>
 		<servlet-class>mypack.ContextTesterServlet</servlet-class>
 	</servlet>
