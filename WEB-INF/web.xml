@@ -168,6 +168,24 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>check1</servlet-name>
+		<servlet-class>mypack.Check1Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>check1</servlet-name>
+		<url-pattern>/check1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>output1</servlet-name>
+		<servlet-class>mypack.Output1Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>output1</servlet-name>
+		<url-pattern>/output1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>contextTest</servlet-name>
 		<servlet-class>mypack.ContextTesterServlet</servlet-class>
 	</servlet>
