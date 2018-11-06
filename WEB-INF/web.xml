@@ -123,6 +123,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>dirtester</servlet-name>
+		<servlet-class>mypack.DirTesterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dirtester</servlet-name>
+		<url-pattern>/dirtester</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>contextTest</servlet-name>
 		<servlet-class>mypack.ContextTesterServlet</servlet-class>
 	</servlet>
