@@ -186,6 +186,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>hello1</servlet-name>
+		<servlet-class>mypack.Hello1Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello1</servlet-name>
+		<url-pattern>/hello1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>contextTest</servlet-name>
 		<servlet-class>mypack.ContextTesterServlet</servlet-class>
 	</servlet>
