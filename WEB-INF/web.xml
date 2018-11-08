@@ -195,6 +195,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>adder</servlet-name>
+		<servlet-class>mypack.AdderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adder</servlet-name>
+		<url-pattern>/adder</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>contextTest</servlet-name>
 		<servlet-class>mypack.ContextTesterServlet</servlet-class>
 	</servlet>
