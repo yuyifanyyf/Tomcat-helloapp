@@ -6,11 +6,10 @@ import java.io.*;
 import java.util.*;
 
 public class Hello1Servlet extends GenericServlet{
-	private String username = null;
 	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		username = request.getParameter("username");
+		String username = request.getParameter("username");
 		if (username != null)
 			username = new String(username.getBytes("ISO-8859-1"), "GB2312");
 		try {
