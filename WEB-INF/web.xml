@@ -204,6 +204,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>sum</servlet-name>
+		<jsp-file>/sum.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sum</servlet-name>
+		<url-pattern>/sum</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>contextTest</servlet-name>
 		<servlet-class>mypack.ContextTesterServlet</servlet-class>
 	</servlet>
