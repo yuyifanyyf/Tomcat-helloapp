@@ -70,6 +70,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>shopping</servlet-name>
+		<servlet-class>mypack.ShoppingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>shopping</servlet-name>
+		<url-pattern>/shopping</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>upload</servlet-name>
 		<servlet-class>mypack.UploadServlet</servlet-class>
 		<init-param>
