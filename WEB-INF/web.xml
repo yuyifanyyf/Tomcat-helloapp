@@ -5,6 +5,10 @@
 		<param-value>yuyifan@bupt.edu.cn</param-value>
 	</context-param>
 	
+	<listener>
+		<listener-class>mypack.MySessionLifeListener</listener-class>
+	</listener>
+	
 	<servlet>
 		<servlet-name>lifeInit</servlet-name>
 		<servlet-class>mypack.LifeServlet</servlet-class>
